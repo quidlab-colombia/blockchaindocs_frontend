@@ -1,0 +1,30 @@
+.hash{
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+}
+.hashbig {
+  width: 100% !important;
+  z-index: 3000;
+  position: absolute;
+  .linebottom {
+    align-items: center !important;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -moz-text-align-last: center !important;
+  }
+  .linebottom:before {
+    background-color: $white;
+    content: '';
+    width: 7.8%;
+    position: absolute;
+    height: 1px;
+    justify-self: center;
+  }
+  p {
+    margin: 0 0 10px 0 !important;
+  }
+  h5 {
+    margin-top: 13px;
+    font-size: 17px !important;
+  }
+}

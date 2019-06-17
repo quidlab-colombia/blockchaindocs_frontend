@@ -1,0 +1,422 @@
+.rot {
+  animation: rot 1.5s infinite linear;
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(0deg) translate(-8px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-8px) rotate(-360deg);
+  }
+}
+
+@keyframes blink {
+
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+.saving span {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  font-size: 50px !important;
+  margin-top: 120px !important;
+}
+
+.saving span:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+  animation-delay: .4s;
+}
+
+.blink {
+  opacity: 0;
+  animation-name: blink2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  @keyframes blink2 {
+
+    0% {
+      opacity: 1;
+    }
+    51% {
+      opacity: 1;
+    }
+    65% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+}
+
+.animationnotfound {
+  opacity: 0;
+  animation-name: disappear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.7s;
+}
+
+@keyframes disappear {
+
+  40% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 1;
+  }
+  44% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  47% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 0;
+  }
+}
+
+.bounceinslow {
+  animation: bounceinslow;
+  animation-duration: 450ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounceinslow {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+.draw {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 9s linear;
+  opacity: 1
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+    opacity: 1
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1
+  }
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-linecap: round;
+  animation: dash 9s linear;
+  opacity: 0;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 1;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+    opacity: 1;
+  }
+}
+
+.ellispsenf {
+  opacity: 0 !important;
+  animation: transparence 5s;
+}
+
+.hash {
+  color: $white;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  animation: transparence;
+  .fas {
+    padding-left: 6px;
+    font-size: 20px;
+    animation: bounceIn 700ms;
+    @keyframes transparence {
+      0% {
+        opacity: 0;
+      }
+      35% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.hash3 {
+  color: $white;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  animation: transparence 10.5s;
+  .fas {
+    padding-left: 6px;
+    font-size: 20px;
+    animation: bounceIn 12s;
+    @keyframes transparence {
+      0% {
+        opacity: 0;
+      }
+      95% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.Fileanimation {
+  height: 90vh;
+  width: 100%;
+}
+
+.ad-1 {
+  animation-duration: 1s !important;
+}
+
+.ad-2 {
+  animation-duration: 2s !important;
+}
+
+.ad-4 {
+  animation-duration: 4s !important;
+}
+
+.ad-5 {
+  animation-duration: 5s !important;
+}
+
+.ad-9 {
+  animation-duration: 7s !important;
+}
+
+.ad-14 {
+  animation-duration: 18s !important;
+}
+
+.ade-2 {
+  animation-delay: 2s !important;
+  opacity: 0 !important;
+}
+
+.ade-1 {
+  animation-delay: 1s !important;
+  opacity: 0 !important;
+}
+
+.ade-4 {
+  animation-delay: 4s !important;
+  opacity: 0 !important;
+}
+
+.ade-2 {
+  animation-delay: 2s !important;
+}
+
+.ade-3 {
+  animation-delay: 3s !important;
+}
+
+.ade-5 {
+  animation-delay: 5s !important;
+}
+
+.ade-7 {
+  animation-delay: 7s !important;
+}
+
+.ade-9 {
+  animation-delay: 9s !important;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+    transform: scale(0.3) translate3d(0, 0, 0);
+  }
+  90% {
+    opacity: 0.9;
+    transform: scale(1.5);
+  }
+  95% {
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+
+}
+
+.op-0 {
+  opacity: 0 !important;
+  animation: opacity;
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+  .st8 {
+    fill: transparent !important;
+    stroke: #7669DE;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .st9 {
+    fill: transparent!important;
+    stroke: $lightgreen;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .st10 {
+    fill: #021018;
+    stroke: #35CCCC;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .st11 {
+    fill: transparent!important;
+    stroke: #00DD96;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .st12 {
+    fill: #021018;
+    stroke: #00DD96;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .st13 {
+    fill: transparent;
+    stroke: #FFA61F;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .st14{
+    fill:none;
+    stroke:#FFA61F;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+    stroke-dasharray:2,4;
+  }
+  .st15 {
+    fill: none;
+    stroke: #FF7C00;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .st16 {
+    fill: none;
+    stroke: #EB0569;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }

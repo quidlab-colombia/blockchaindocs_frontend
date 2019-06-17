@@ -1,0 +1,182 @@
+.verify {
+  @media (max-width: 960px) {
+   display: none !important;
+  }
+}
+.nofilefound-1 {
+  position: absolute;
+  left: 120px;
+  top: 118px;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+  animation: transparence 10s;
+  color: $white;
+}
+.nofilefound-2 {
+  position: absolute;
+  left: 361px;
+  top: 154px;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+  animation: transparence 10s;
+  color: $white;
+}
+.nofilefound-3 {
+  position: absolute;
+  left: 313px;
+  top: 0px;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+  animation: transparence 10s;
+  color: $white;
+}
+.nofilefound-4 {
+  position: absolute;
+  left: 369px;
+  top: 356px;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+  animation: transparence 10s;
+  color: $white;
+}
+.nofilefound-5 {
+  position: absolute;
+  left: 150px;
+  top: 148px;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+  animation: transparence 7s;
+  color: $white;
+}
+.nofilefound-6 {
+  position: absolute;
+  left: 276px;
+  top: 350px;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+  animation: transparence 3s;
+  color: $white;
+}
+.nofilefound-7 {
+  position: absolute;
+  left: 380px;
+  top: 10px;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+  animation: transparence 12s;
+  color: $white;
+}
+.firsthash {
+  position: absolute;
+  left: 109px;
+  top: 115px;
+}
+.secondhash {
+  position: absolute;
+  left: 399px;
+  top: 93px;
+}
+.thirdhash {
+  position: absolute;
+  left: 308px;
+  top: 0px;
+}
+.fourthash {
+  position: absolute;
+  left: 356px;
+  top: 351px;
+}
+.fifthash {
+  position: absolute;
+  left: 396px;
+  top: 12px;
+}
+.line1 {
+  height: 500px;
+  width: 500px;
+  justify-self: center;
+}
+.hash2 {
+  color: $white;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  animation: transparence2 6s;
+  @keyframes transparence2 {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+.etherium {
+  animation: transparence3 3s;
+  animation-delay: 9s;
+}
+
+@keyframes transparence3 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.st0 {
+  fill: none;
+  stroke: $yellow;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-width: 1px;
+}
+.st1 {
+  opacity: 0.6;
+  fill: $yellow;
+}
+.st2 {
+  fill: $yellow;
+}
+.st3 {
+  fill: $lightgreen;
+}
+.st4{
+  fill:none;
+  stroke:$white;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+  stroke-dasharray:2,4;
+}
+.st5{
+  fill:$red;
+}
+.st6{
+  fill:$whitetransparent;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+.st7{
+  stroke:$white;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+
+mt-6{
+  margin-top: 30%;
+}
+
+
